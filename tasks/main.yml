@@ -27,8 +27,7 @@
 - name: install packages
   apt:
     state: latest
-    name: "{{ item }}"
-  with_items: "{{ chrisjohnson00_jackett_packages }}"
+    name: "{{ chrisjohnson00_jackett_packages }}"
 
 - name: setup jackett user
   user:
